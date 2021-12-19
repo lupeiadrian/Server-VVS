@@ -3,6 +3,7 @@ package org.codefromscratch.httpserver;
 import org.codefromscratch.httpserver.config.Configuration;
 import org.codefromscratch.httpserver.config.ConfigurationManager;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -16,6 +17,8 @@ import java.net.Socket;
  */
 public class HttpServer {
     public static void main(String[] args){
+
+
         System.out.println("Server starting...");
 
         ConfigurationManager.getInstace().loadConfigurationFile("src/main/resources/http.json");
